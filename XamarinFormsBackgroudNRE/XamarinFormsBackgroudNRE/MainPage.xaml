@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinFormsBackgroudNRE.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="This first page sets the label background to null in OnAppearing. The first call will cause an unhandled NRE in XamarinForms which will be reported on GarbageCollection." HorizontalTextAlignment="Center" TextColor="White" FontSize="24"/>
+        </Frame>
+        <Label x:Name="labelWithBackground" Text="Label with background" FontSize="Title" HorizontalOptions="CenterAndExpand" Padding="30,10,30,10" Background="DarkBlue"/>
+        <Button Text="Trigger garbage collection" Clicked="Button_Clicked"/>
+        <Button Text="Next Page" Clicked="Button_Clicked_1"/>
+    </StackLayout>
+
+</ContentPage>
