@@ -8,17 +8,11 @@ using Xamarin.Forms;
 
 namespace XamarinFormsBackgroudNRE
 {
-    public partial class MainPage2 : ContentPage
+    public partial class ErrorPage : ContentPage
     {
-        public MainPage2()
+        public ErrorPage()
         {
             InitializeComponent();
-           
-        }
-
-        protected override void OnAppearing()
-        {
-            base.OnAppearing();
             labelWithBackground.Background = null;
         }
 
